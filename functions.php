@@ -24,7 +24,7 @@ add_action('wp_enqueue_scripts', 'university_files');
 function university_features() {
     // When you want to enable a feature for your theme you call the following function
     add_theme_support('title-tag');
-    // There are all sorts load of features you can add with this function so we need to tell WP which specific feature(s) we are interested in.
+    // There are all sorts of features you can add with this function so we need to tell WP which specific feature(s) we are interested in.
 }
 
 add_action('after_setup_theme', 'university_features');
