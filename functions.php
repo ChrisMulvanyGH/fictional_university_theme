@@ -20,3 +20,11 @@ function university_files() {
 // Call out custom function university_files
 add_action('wp_enqueue_scripts', 'university_files');
 // Add two parameters - The first specifies scripts such as .css or .js files.  The 2nd specifies a function to run that we create above.
+
+function university_features() {
+    // When you want to enable a feature for your theme you call the following function
+    add_theme_support('title-tag');
+    // There are all sorts load of features you can add with this function so we need to tell WP which specific feature(s) we are interested in.
+}
+
+add_action('after_setup_theme', 'university_features');
